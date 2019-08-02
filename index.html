@@ -2,17 +2,18 @@
 <html lang = "en-us">
 <head>
     
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <meta charset = "UTF-8">
+    <link rel = "stylesheet" href = "assets/css/style.css">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
     <title>GifTastic HW Assignment</title>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 </head>    
 <body id="wholeBody">
     <!-- JUMBO W/ INSTRUCTIONS -->
-    <div class="jumbotron" id="header">
-        <img id="topImageL" src = "assets/images/pokeball.gif">
-        <img id="topImageL" src = "assets/images/pokeball.gif">
+    <div class = "jumbotron" id = "header">
+        <img id = "topImageL" src = "assets/images/pokeball.gif">
+        <img id = "topImageR" src = "assets/images/pokeball.gif">
         <h1>GifTastic - Pokemon</h1>
         <h4>Click on one of the buttons below to display 10 gifs of that chosen pokemon.</h4>
         <h4>Click on each gif to play/pause the animation.</h4>
@@ -21,39 +22,39 @@
     </div>
 
     <!-- SEARCH BAR AND BUTTONS -->
-    <form class="form-inline" id="searchBar">
-        <div class="form-group">
-            <label for="pokeSearch">Search for a Pokemon here!</label>
-            <input type="text" id="pokeSearch">
+    <form class = "form-inline" id = "searchBar">
+        <div class = "form-group">
+            <label for = "pokeSearch">Search for a Pokemon here!</label>
+            <input type = "text" id = "pokeSearch">
         </div>
         <!-- BUTTONS TO ADD POKEMON -->
-        <input id="addPokemon" type="submit" value="submit">
+        <input id = "addPokemon" type = "submit" value = "submit">
     </form>
 
     <!-- Div where the pokemon buttons will go -->
-    <div class="row">
-        <div class="container">
-            <div class="btn-group inline pull-left">
-                <button class="btn btn-primary" id="show" data-search="mewtwo">Mewtwo</button>
-                <button class="btn btn-primary" id="show" data-search="zapdos">Zapdos</button>
-                <button class="btn btn-primary" id="show" data-search="articuno">Articuno</button>
-                <button class="btn btn-primary" id="show" data-search="moltres">Moltres</button>
+    <div class = "row">
+        <div class = "container">
+            <div class = "btn-group inline pull-left">
+                <button class = "btn btn-primary" id = "pokemon" data-search = "mewtwo">Mewtwo</button>
+                <button class = "btn btn-primary" id = "pokemon" data-search = "zapdos">Zapdos</button>
+                <button class = "btn btn-primary" id = "pokemon" data-search = "articuno">Articuno</button>
+                <button class = "btn btn-primary" id = "pokemon" data-search = "moltres">Moltres</button>
 
-                <div id="addedButtons"></div>
+                <div id = "addedButtons"></div>
             </div>
         </div>
     </div>
 
     <!-- Container where gifs will go -->
-    <duiv class="row">
-        <div class="container">
-            <span><div id="gifBox"></div></span>
+    <duiv class = "row">
+        <div class = "container">
+            <span><div id = "gifBox"></div></span>
         </div>
     </duiv>
 
     
     <script type="text/javascript" src="assets/javascript/app.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </body>
 
