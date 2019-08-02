@@ -9,6 +9,7 @@
 
 </head>    
 <body id="wholeBody">
+    <!-- JUMBO W/ INSTRUCTIONS -->
     <div class="jumbotron" id="header">
         <img id="topImageL" src = "assets/images/pokeball.gif">
         <img id="topImageL" src = "assets/images/pokeball.gif">
@@ -19,8 +20,31 @@
         <h6>* Not sure what to look up? Use google to find a list of pokemon *</h6>
     </div>
 
+    <!-- SEARCH BAR AND BUTTONS -->
+    <form class="form-inline" id="searchBar">
+        <div class="form-group">
+            <label for="pokeSearch">Search for a Pokemon here!</label>
+            <input type="text" id="pokeSearch">
+        </div>
+        <!-- BUTTONS TO ADD POKEMON -->
+        <input id="addPokemon" type="submit" value="submit">
+    </form>
 
+    <!-- Div where the pokemon buttons will go -->
+    <div class="row">
+        <div class="container">
+            <div class="btn-group inline pull-left">
+                <button class="btn btn-primary" id="show" data-search="mewtwo">Mewtwo</button>
+                <button class="btn btn-primary" id="show" data-search="zapdos">Zapdos</button>
+                <button class="btn btn-primary" id="show" data-search="articuno">Articuno</button>
+                <button class="btn btn-primary" id="show" data-search="moltres">Moltres</button>
 
+                <div id="addedButtons"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container where gifs will go -->
 </body>
 
 
