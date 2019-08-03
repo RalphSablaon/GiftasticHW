@@ -1,6 +1,6 @@
 body{
     background-image: url(../images/bg1.jpg);
-    background-size: 100%;
+    background-size: 110%;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
@@ -9,10 +9,12 @@ body{
     text-align: center;
     padding-top: 10px;
     padding-bottom: 15px;
-    color: red;
-    text-shadow: 2px 3px darkgrey;
+    color: black;
     background-color: transparent;
+}
 
+#header h1 {
+    text-shadow: 3px 4px white;
 }
 
 #topImageL {
@@ -30,7 +32,6 @@ body{
 form {
     text-align: center;
     font-size: 18px;
-
 }
 
 label {
@@ -57,7 +58,15 @@ label {
 }
 
 .pokeGiphy {
-    padding: 2px;
+    padding: 5px;
     width: 80%;
-    border: 2px solid black
+    border: 2px solid black;
+    background-color: white;
+
 }
+
+p {
+    font-size: 16px;
+    font-weight: bolder;
+}
+

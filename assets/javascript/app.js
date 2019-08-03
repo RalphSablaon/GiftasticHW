@@ -35,8 +35,8 @@ $(document).ready(function() {
                     showImg.attr("data-animate", animatedSrc);
                     
                     // append the img to gifBox
-                    pokeDiv.append(rateCaption);
                     pokeDiv.append(showImg);
+                    pokeDiv.append(rateCaption);
                     $("#gifBox").prepend(pokeDiv);
                 }
             });
