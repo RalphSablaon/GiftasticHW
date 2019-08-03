@@ -11,8 +11,9 @@
 
 </head>    
 <body id="wholeBody">
+    
     <!-- JUMBO W/ INSTRUCTIONS -->
-    <div class = "jumbotron" id = "header">
+    <div class = "header" id = "header">
         <img id = "topImageL" src = "assets/images/pokeball.gif">
         <img id = "topImageR" src = "assets/images/pokeball.gif">
         <h1>GifTastic - Pokemon</h1>
@@ -27,12 +28,14 @@
             <label for = "pokeSearch">Search for a Pokemon here!</label>
             <input type = "text" id = "pokeSearch">
         </div>
+        
         <!-- BUTTONS TO ADD POKEMON -->
         <input id = "addPokemon" type = "submit" value = "submit">
     </form>
 
     <br>
-    <!-- Div where the pokemon buttons will go -->
+    
+    <!-- Div where the buttons will go -->
     <div class = "row">
         <div class = "container">
             <div class = "btn-group inline pull-left">
@@ -40,13 +43,13 @@
                 <button class = "btn btn-primary" id = "pokemon" data-search = "zapdos">Zapdos</button>
                 <button class = "btn btn-primary" id = "pokemon" data-search = "articuno">Articuno</button>
                 <button class = "btn btn-primary" id = "pokemon" data-search = "moltres">Moltres</button>
-
-                <div id = "addedButtons"></div>
+                <!-- Seperate div where the added buttons will appear -->
+                <div class = "btn-group inline pull-left" id = "addedButtons"></div>
             </div>
         </div>
     </div>
 
-    <!-- Container where gifs will go -->
+    <!-- Container where the gifs will go -->
     <duiv class = "row">
         <div class = "container">
             <span><div id = "gifBox"></div></span>
@@ -55,9 +58,7 @@
 
     
     <script type="text/javascript" src="assets/javascript/app.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </body>
 
 </html>
-

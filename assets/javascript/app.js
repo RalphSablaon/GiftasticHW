@@ -8,6 +8,7 @@ $(document).ready(function() {
 
             console.log(queryURL);
 
+            // AJAX REQ USING GET METHOD
             $.ajax({
                 url: queryURL,
                 method: "GET"
@@ -15,26 +16,27 @@ $(document).ready(function() {
                     var results = response.data;
                     console.log(results);
                     for (var i = 0; i < results.length; i++) {
-                    // var to create a column for img
+                    
+                    // VAR TO CREATE COLUMNS FOR IMGS
                     var pokeDiv = $("<div class='col-md-4'>");
                     
-                    // variables to get necessary info from giphy to show still/animated imgs
+                    // VARIABLES TO GET INFO FROM GIPHY FOR STILL/ANIMATED IMGS
                     var rating = results[i].rating;
                     var animatedSrc = results[i].images.fixed_height.url;
                     var staticSrc = results[i].images.fixed_height_still.url;
                     
-                    // variables to create new img divs with rating captions
+                    // VARIABLES TO CREATE NEW IMG DIVS WITH RATINGS CAPTION
                     var showImg = $("<img>");
                     var rateCaption = $("<p>").text("Rating: " + rating);   
 
-                    // give each img a class and also allows it to be static/animated
+                    // GIVE EACH IMG A CLASS "pokeGiphy" AND THE ATTR TO MAKE IT STILL AND ANIMATED
                     showImg.attr("src", staticSrc);
                     showImg.addClass("pokeGiphy");
                     showImg.attr("data-state", "still");
                     showImg.attr("data-still", staticSrc);
                     showImg.attr("data-animate", animatedSrc);
                     
-                    // append the img to gifBox
+                    // APPEND THE IMG TO #gifBox
                     pokeDiv.append(showImg);
                     pokeDiv.append(rateCaption);
                     $("#gifBox").prepend(pokeDiv);
@@ -85,6 +87,3 @@ $(document).ready(function() {
     }
 
 });
-
-
-
